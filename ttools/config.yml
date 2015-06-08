@@ -1,0 +1,49 @@
+Projectname: "SilverStripe dummy"
+Environments:
+  Live:
+    #required
+    Host: ""
+    Sshuser: ""
+    Repodir: ""
+    #additional settings
+    Domain: ""
+    Sshport: ""
+    Composerpath: ""
+    PhpPath: ""
+  Dev:
+    #add dev site info here
+Menu:
+  Heading1:
+    Title: Local
+    Item1:
+      Title: Git Pull, Sync Submodules & Composer install
+      Command: "ttools/githelpers/lib/git-pull.sh ttools/githelpers/lib/composer-install.sh"
+    Item2:
+      Title: Overwrite Local Site with Database & Assets from Live Site
+      Command: "ttools/sitesync-core/local/sync-environments.sh Live Local"
+  Heading2:
+    Title: Dev Site
+    Item1:
+      Title: SSH Dev Site
+      Command: "ttools/core/local/ssh.sh Dev"
+    Item2:
+      Title: Deploy Dev Site
+      Command: "ttools/githelpers/local/git-pull-remote.sh Dev ttools/githelpers/lib/composer-install.sh"
+    Item3:
+      Title: Push Database & Assets to Dev Site
+      Command: "ttools/sitesync-core/local/sync-environments.sh Local Dev"
+    Item4:
+      Title: Overwrite Dev Site with Database & Assets from Live Site
+      Command: "ttools/sitesync-core/local/sync-environments.sh Live Dev"      
+  Heading3:
+    Title: Live Site
+    Item1:
+      Title: SSH Live Site
+      Command: "ttools/core/local/ssh.sh Live"
+    Item2:
+      Title: Deploy Live Site
+      Command: "ttools/githelpers/local/git-pull-remote.sh Live ttools/githelpers/lib/composer-install.sh"
+Sitesync:
+  FrameworkModule: 'ttools/sitesync-silverstripe'
+
+
