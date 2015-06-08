@@ -4,7 +4,8 @@
 	"require": {
 		"php": ">=5.3.2",
 		"silverstripe/cms": "3.1.13",
-		"silverstripe/framework": "3.1.13"
+		"silverstripe/framework": "3.1.13",
+		"unclecheese/dropzone": "*"
 	},
 	"require-dev": {
 		"phpunit/PHPUnit": "~3.7@stable"

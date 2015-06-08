@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e001ebd84e1589bb8d4addb2513cc58c",
+    "hash": "db9d4ae2071ea32b3762f9660101a7aa",
     "packages": [
         {
             "name": "composer/installers",
@@ -196,6 +196,48 @@
                 "silverstripe"
             ],
             "time": "2015-05-28 06:59:11"
+        },
+        {
+            "name": "unclecheese/dropzone",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/unclecheese/silverstripe-dropzone.git",
+                "reference": "c3f5129e08b74d8e0d5060b66b0ba2792a13bf3f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-dropzone/zipball/c3f5129e08b74d8e0d5060b66b0ba2792a13bf3f",
+                "reference": "c3f5129e08b74d8e0d5060b66b0ba2792a13bf3f",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "3.1.*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "dropzone"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Uncle Cheese",
+                    "email": "unclecheese@leftandmain.com"
+                }
+            ],
+            "description": "An HTML5 upload field for the CMS and frontend forms.",
+            "keywords": [
+                "Forms",
+                "cms",
+                "files",
+                "silverstripe",
+                "upload",
+                "uploader"
+            ],
+            "time": "2015-06-02 12:06:22"
         }
     ],
     "packages-dev": [
